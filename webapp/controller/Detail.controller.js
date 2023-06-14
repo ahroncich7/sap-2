@@ -12,7 +12,7 @@ sap.ui.define([
   
    
   
-        return Controller.extend("destinationtest.destination2.Detail", {
+        return Controller.extend("destinationtest.destination2.controller.Detail", {
   
             onInit: function () {
   

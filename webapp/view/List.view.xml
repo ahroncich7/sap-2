@@ -1,4 +1,4 @@
-<mvc:View controllerName="destinationtest.destination2.List" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+<mvc:View controllerName="destinationtest.destination2.controller.List" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
 
   <Page id="listPage" title="{i18n>ListTitle}" >
 

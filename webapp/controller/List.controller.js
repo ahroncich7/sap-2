@@ -10,7 +10,7 @@ sap.ui.define([
 
  
 
-        return Controller.extend("destinationtest.destination2.List", {
+        return Controller.extend("destinationtest.destination2.controller.List", {
 
             handleListItemPress: function (oEvent) {
 
