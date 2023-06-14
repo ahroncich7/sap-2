@@ -18,7 +18,7 @@ sap.ui.define([
   
                 var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
   
-                oRouter.getRoute("RouteDetail").attachMatched(this._onRouteMatched, this);
+                oRouter.getRoute("detail").attachMatched(this._onRouteMatched, this);
   
             },
   
@@ -58,7 +58,7 @@ sap.ui.define([
   
                 var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
   
-                oRouter.navTo("RouteView1");
+                oRouter.navTo("home");
   
             }
   

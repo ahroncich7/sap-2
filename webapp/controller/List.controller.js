@@ -8,7 +8,7 @@ sap.ui.define([
 
         "use strict";
 
- 
+
 
         return Controller.extend("destinationtest.destination2.controller.List", {
 
@@ -18,7 +18,7 @@ sap.ui.define([
 
                 var selectedProductId = oEvent.getSource().getBindingContext().getProperty("ProductID");
 
-                oRouter.navTo("RouteDetail", {
+                oRouter.navTo("detail", {
 
                     productId: selectedProductId
 
