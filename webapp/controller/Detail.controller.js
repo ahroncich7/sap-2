@@ -32,7 +32,7 @@ sap.ui.define([
   
                 oView.bindElement({
   
-                    path: "/Products(" + oArgs.productId + ")",
+                    path: "prod>/Products(" + oArgs.productId + ")",
   
                     events: {
   

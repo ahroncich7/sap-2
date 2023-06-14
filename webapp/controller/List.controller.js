@@ -16,7 +16,7 @@ sap.ui.define([
 
                 var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
 
-                var selectedProductId = oEvent.getSource().getBindingContext().getProperty("ProductID");
+                var selectedProductId = oEvent.getSource().getBindingContext("prod").getProperty("ProductID");
 
                 oRouter.navTo("detail", {
 

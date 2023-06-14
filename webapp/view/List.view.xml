@@ -2,9 +2,9 @@
 
   <Page id="listPage" title="{i18n>ListTitle}" >
 
-        <List id="list" items="{/Products}">
+        <List id="list" items="{prod>/Products}">
 
-          <StandardListItem id="_IDGenStandardListItem1" type="Navigation" press="handleListItemPress" title="{ProductName}"/>
+          <StandardListItem id="_IDGenStandardListItem1" type="Navigation" press="handleListItemPress" title="{prod>ProductName}"/>
 
         </List>
 

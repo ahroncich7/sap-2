@@ -69,7 +69,7 @@
                     "bundleName": "destinationtest.destination2.i18n.i18n"
                 }
             },
-            "": {
+            "prod": {
                 "dataSource": "mainService",
                 "preload": true,
                 "settings": {}
