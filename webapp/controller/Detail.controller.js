@@ -1,12 +1,14 @@
 sap.ui.define([
 
-    "sap/ui/core/mvc/Controller"
+    "sap/ui/core/mvc/Controller",
+    "sap/m/MessageBox",
+    "sap/m/MessageToast",
   
   ],
   
    
   
-    function (Controller) {
+    function (Controller, MessageBox, MessageToast) {
   
         "use strict";
   
@@ -32,7 +34,7 @@ sap.ui.define([
   
                 oView.bindElement({
   
-                    path: "prod>/Products(" + oArgs.productId + ")",
+                    path: "Products(" + oArgs.productId + ")",
   
                     events: {
   
@@ -60,6 +62,20 @@ sap.ui.define([
   
                 oRouter.navTo("home");
   
+            },
+
+            handleOrder : function (evt) {
+                var bundle= this.getView().getModel("i18n").getResourceBundle();
+                MessageBox.confirm(
+                    bundle.getText("OrderDialogMsg"),
+                    function (oAction){
+                        if (MessageBox.Action.OK === oAction){
+                            var succesMsg = bundle.getText("OrderDialogSuccessMsg");
+                            MessageToast.show(succesMsg);
+                        }
+                    },
+                    bundle.getText("OrderDialogTitle")
+                )
             }
   
         });
